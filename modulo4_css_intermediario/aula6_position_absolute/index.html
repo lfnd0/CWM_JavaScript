@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+    <style type="text/css">
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .board {
+            width: 500px;
+            height: 400px;
+            border: 1px solid gray;
+            position: relative;
+        }
+
+        .red-square {
+            background-color: red;
+        }
+
+        .blue-square {
+            background-color: blue;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .green-square {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <div class="square red-square"></div>
+        <div class="square blue-square"></div>
+        <div class="square green-square"></div>
+    </div>
+</body>
+
+</html>
